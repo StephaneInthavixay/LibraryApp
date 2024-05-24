@@ -1,9 +1,10 @@
 using LibraryApp.Domain.Entities;
+using LibraryApp.Domain.Interfaces;
 using LibraryApp.Infrastructure.Data;
 
 namespace LibraryApp.Infrastructure.Repositories;
 
-public class EditorRepository
+public class EditorRepository : IEditorRepository
 {
     private readonly LibraryAppContext _context;
 

@@ -3,7 +3,7 @@ using LibraryApp.Domain.Services;
 
 namespace LibraryApp.Application.Services;
 
-public class LibraryAppService : ILibrayAppService
+public class LibraryAppService : ILibraryAppService
 {
     private readonly IUserRepository _userRepository;
     private readonly IMangaRepository _mangaRepository;

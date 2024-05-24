@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace LibraryApp.Domain.Entities;
 
 public class Manga
 {
+    [Key]
     public int Id { get; set; }
     public string Name { get; set; }
     public int NumberOfVolumesVO { get; set; }

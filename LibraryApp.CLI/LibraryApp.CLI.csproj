@@ -16,6 +16,7 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-preview.4.24267.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.0-preview.4.24267.1" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-preview.4.24266.19" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0-preview.4.24266.19" />
     </ItemGroup>
 
     <ItemGroup>

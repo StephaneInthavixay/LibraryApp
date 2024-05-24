@@ -1,9 +1,11 @@
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace LibraryApp.Domain.Entities;
 
 public class User
 {
+    [Key]
     public int Id { get; set; }
     public string Firstname { get; set; }
     public string Lastname { get; set; }

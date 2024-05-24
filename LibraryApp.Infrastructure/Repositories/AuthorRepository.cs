@@ -16,24 +16,24 @@ public class AuthorRepository : IAuthorRepository
 
     public void Add(Author author)
     {
-        _context.Authors.Add(author);
+        _context.Author.Add(author);
         _context.SaveChanges();
     }
 
     public void Update(Author author)
     {
-        _context.Authors.Update(author);
+        _context.Author.Update(author);
         _context.SaveChanges();
     }
 
     public void Delete(Author author)
     {
-        _context.Authors.Remove(author);
+        _context.Author.Remove(author);
         _context.SaveChanges();
     }
 
     public Author GetById(int id)
     {
-        return _context.Authors.Find(id);
+        return _context.Author.Find(id);
     }
 }

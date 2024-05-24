@@ -6,4 +6,6 @@ namespace LibraryApp.Domain.Services;
 public interface IUserService
 {
     public bool CanBorrow(User user);
+    public void BorrowManga(User user, Manga manga);
+    public void ReturnManga(User user, Manga manga);
 }

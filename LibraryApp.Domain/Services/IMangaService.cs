@@ -6,4 +6,6 @@ namespace LibraryApp.Domain.Services;
 public interface IMangaService
 {
     public bool CanBeBorrowed(Manga manga);
+    public void IsBorrowed(Manga manga);
+    public void IsReturned(Manga manga);
 }

@@ -9,4 +9,14 @@ public class UserService : IUserService
     {
         return user.Mangas.Count <= 10;
     }
+
+    public void BorrowManga(User user, Manga manga)
+    {
+        user.Mangas.Add(manga);
+    }
+
+    public void ReturnManga(User user, Manga manga)
+    {
+        user.Mangas.Remove(manga);
+    }
 }

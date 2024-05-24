@@ -9,4 +9,14 @@ public class MangaService : IMangaService
     {
         return manga.Stock > 0;
     }
+
+    public void IsBorrowed(Manga manga)
+    {
+        manga.Stock--;
+    }
+
+    public void IsReturned(Manga manga)
+    {
+        manga.Stock++;
+    }
 }

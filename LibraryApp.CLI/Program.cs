@@ -13,7 +13,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello");
         var serviceProvider = BuildServiceProvider();
         
         /*
@@ -31,7 +30,6 @@ public class Program
         var libraryAppService = serviceProvider.GetService<ILibraryAppService>();
         
         libraryAppService.BorrowManga(1, 1);
-        Console.WriteLine("Salut");
     }
 
     private static IServiceProvider BuildServiceProvider()

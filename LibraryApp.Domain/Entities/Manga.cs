@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LibraryApp.Domain.Entities;
 
+[Table("Manga")]
 public class Manga
 {
     [Key]

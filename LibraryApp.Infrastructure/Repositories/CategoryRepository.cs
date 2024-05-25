@@ -16,24 +16,24 @@ public class CategoryRepository : ICategoryRepository
 
     public void Add(Category category)
     {
-        _context.Category.Add(category);
+        _context.Categories.Add(category);
         _context.SaveChanges();
     }
 
     public void Update(Category category)
     {
-        _context.Category.Update(category);
+        _context.Categories.Update(category);
         _context.SaveChanges();
     }
 
     public void Delete(Category category)
     {
-        _context.Category.Remove(category);
+        _context.Categories.Remove(category);
         _context.SaveChanges();
     }
 
     public Category GetById(int id)
     {
-        return _context.Category.Find(id);
+        return _context.Categories.Find(id);
     }
 }

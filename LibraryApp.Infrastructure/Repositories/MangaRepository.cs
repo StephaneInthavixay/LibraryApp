@@ -16,24 +16,24 @@ public class MangaRepository : IMangaRepository
 
     public void Add(Manga manga)
     {
-        _context.Manga.Add(manga);
+        _context.Mangas.Add(manga);
         _context.SaveChanges();
     }
 
     public void Update(Manga manga)
     {
-        _context.Manga.Update(manga);
+        _context.Mangas.Update(manga);
         _context.SaveChanges();
     }
 
     public void Delete(Manga manga)
     {
-        _context.Manga.Remove(manga);
+        _context.Mangas.Remove(manga);
         _context.SaveChanges();
     }
 
     public Manga GetById(int id)
     {
-        return _context.Manga.Find(id);
+        return _context.Mangas.Find(id);
     }
 }

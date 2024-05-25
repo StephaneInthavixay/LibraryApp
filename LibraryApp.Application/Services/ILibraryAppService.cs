@@ -1,5 +1,3 @@
-using LibraryApp.Domain.Entities;
-
 namespace LibraryApp.Application.Services;
 
 public interface ILibraryAppService
